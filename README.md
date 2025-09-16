@@ -78,6 +78,61 @@ To run this project on your local machine, follow these steps:
 
 ### 1. Clone the Repository
 
-```bash
+bash
 git clone [https://github.com/Udipta4484/City-Explorer-App.git](https://github.com/Udipta4484/City-Explorer-App.git)
 cd City-Explorer-App
+
+
+### 2. Backend Setup
+
+bash
+# Navigate to the backend directory
+cd backend
+
+# Create a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# Install the required packages
+pip install -r requirements.txt
+
+# Create a .env file (copy from .env.example) and add your API keys and DB URL
+# DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE_NAME
+# OPENWEATHER_API_KEY=...
+# OPENTRIPMAP_API_KEY=... (Your Geoapify Key)
+# TIMEZONEDB_API_KEY=...
+# SECRET_KEY=...
+
+# Create the database tables
+python create_db.py
+
+# Run the backend server
+uvicorn main:app --reload
+
+
+### 3. Frontend Setup
+
+bash
+# Open a new terminal and navigate to the frontend directory
+cd frontend
+
+# Run the live server
+python -m http.server 3000
+
+
+Open your browser and navigate to http://localhost:3000 to see the application running.
+
+---
+
+## 👤 Author
+
+* *Udipta Mohanty*
+* *Email*: [udipta.mohanty15@gmail.com](mailto:udipta.mohanty15@gmail.com)
+* *GitHub*: [@Udipta4484](https://github.com/Udipta4484)
+
+&copy; 2025 Udipta Mohanty. All Rights Reserved.
