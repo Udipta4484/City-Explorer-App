@@ -1,0 +1,26 @@
+# Python virtual environment
+/venv/
+.venv/
+env/
+ENV/
+
+# Python artifacts
+_pycache_/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local secrets and environment variables
+.env
+
+# Operating System files
+.DS_Store
+Thumbs.db
