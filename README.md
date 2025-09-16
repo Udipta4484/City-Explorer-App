@@ -128,11 +128,3 @@ python -m http.server 3000
 Open your browser and navigate to http://localhost:3000 to see the application running.
 
 ---
-
-## 👤 Author
-
-* *Udipta Mohanty*
-* *Email*: [udipta.mohanty15@gmail.com](mailto:udipta.mohanty15@gmail.com)
-* *GitHub*: [@Udipta4484](https://github.com/Udipta4484)
-
-&copy; 2025 Udipta Mohanty. All Rights Reserved.
