@@ -32,7 +32,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 43200
 
 app = FastAPI(title="City Explorer API")
 
-origins = ["http://localhost:3000"]
+origins = ["http://localhost:300","https://city-explorer-app.vercel.app"]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -192,4 +192,5 @@ def search(q: str, db: Session = Depends(get_db)):
         return out
     except Exception as e:
         traceback.print_exc()
+
         return JSONResponse(status_code=500, content={"detail": f"Server error: {str(e)}"})
