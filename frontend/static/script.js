@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://city-explorer-api.onrender.com";
 const $ = sel => document.querySelector(sel);
 
 // --- State to hold current city info ---
@@ -196,4 +196,5 @@ function showToast(message, type = "info") { /* ... unchanged ... */ const color
 function getWeatherIcon(iconCode) { /* ... unchanged ... */ const iconMap = {'01d':'sun','01n':'moon','02d':'cloud-sun','02n':'cloud-moon','03d':'cloud','03n':'cloud','04d':'cloudy','04n':'cloudy','09d':'cloud-rain','09n':'cloud-rain','10d':'cloud-drizzle','10n':'cloud-drizzle','11d':'cloud-lightning','11n':'cloud-lightning','13d':'cloud-snow','13n':'cloud-snow','50d':'wind','50n':'wind'}; return iconMap[iconCode] || 'sun';}
 function escapeHtml(s) { /* ... unchanged ... */ if (!s) return ''; return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function init() { $("#searchBtn").addEventListener("click", doSearch); $("#q").addEventListener("keydown", e => { if (e.key === "Enter") doSearch(); }); updateAuthUI(); }
+
 document.addEventListener("DOMContentLoaded", init);
