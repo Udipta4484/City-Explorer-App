@@ -1,4 +1,4 @@
-const API_BASE = "https://city-explorer-api.onrender.com";
+const API_BASE = "https://city-explorer-app-1.onrender.com";
 const $ = sel => document.querySelector(sel);
 
 // --- State to hold current city info ---
@@ -198,3 +198,4 @@ function escapeHtml(s) { /* ... unchanged ... */ if (!s) return ''; return Strin
 function init() { $("#searchBtn").addEventListener("click", doSearch); $("#q").addEventListener("keydown", e => { if (e.key === "Enter") doSearch(); }); updateAuthUI(); }
 
 document.addEventListener("DOMContentLoaded", init);
+
