@@ -19,7 +19,6 @@ A feature-rich, full-stack web application designed to help users explore cities
   </tr>
 </table>
 
-*(Note: You will need to create a screenshots folder in your repository and add your images with the names frontend.png and backend-api.png for them to display correctly.)*
 
 ---
 
